@@ -1,2 +1,3 @@
 .venv
 /data/*.csv
+node_modules

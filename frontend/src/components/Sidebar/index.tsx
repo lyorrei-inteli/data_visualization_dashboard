@@ -16,12 +16,12 @@ const Sidebar: React.FC<Props> = (props) => {
         {
             icon: BarChart,
             label: "Análise",
-            link: routes.flight.base,
+            link: routes.predictions.base,
         },
         {
             icon: Upload,
             label: "Upload",
-            link: routes.flight.create,
+            link: routes.predictions.create,
         },
     ];
     const session = useSession();

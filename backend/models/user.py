@@ -1,8 +1,17 @@
 from uuid import UUID
 from pydantic import BaseModel, Field
 
+class UserResponse(BaseModel):
+    id: str
+    email: str
+    name: str
+
+    class Config:
+        from_attributes = True
+
 class TokenSchema(BaseModel):
     access_token: str
+    user: UserResponse
     
     
 class TokenPayload(BaseModel):
@@ -12,6 +21,7 @@ class TokenPayload(BaseModel):
 
 class UserAuth(BaseModel):
     email: str = Field(..., description="user email")
+    name: str = Field(..., description="user name")
     password: str = Field(..., min_length=5, max_length=24, description="user password")
     
 

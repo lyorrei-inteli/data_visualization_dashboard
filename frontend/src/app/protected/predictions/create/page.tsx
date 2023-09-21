@@ -6,7 +6,7 @@ import React from 'react'
  const Dashboard = () => {
   return (
     <>
-        <PageHeader title='Upload de dados de um voo' subtitle='Faça upload de um arquivo .parquet com os dados de um voo para prevenir falhas no sistema de Bleed do avião'/>
+        <PageHeader title='Upload de dados de um acidente' subtitle='Faça upload de um arquivo .csv com os dados de um acidente para predizer sua gravidade'/>
         <Card className='h-full flex justify-center items-center'>
           <UploadForm />
         </Card>

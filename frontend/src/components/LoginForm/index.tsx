@@ -7,9 +7,11 @@ import { AtSign, Lock } from "lucide-react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+import { Spinner } from "../Spinner";
 
 const schema = yup.object({
     email: yup.string().email("Esse campo deve ser um email").required("Esse campo é obrigatório."),
@@ -24,26 +26,29 @@ const LoginForm: React.FC = () => {
     } = useForm<any>({
         resolver: yupResolver(schema),
     });
+    const [loading, setLoading] = useState(false);
 
     const router = useRouter();
 
     const onSubmit = async (data: any) => {
+        setLoading(true);
         try {
             const res = await signIn("credentials", {
                 redirect: false,
                 email: data.email,
                 password: data.password,
             });
-            console.log("res:", res)
+            console.log("res:", res);
 
             if (res?.error) {
                 throw new Error(res.error);
             }
 
             toast.success("Login realizado com sucesso.");
-            router.replace(routes.flight.base);
+            router.replace(routes.predictions.base);
         } catch (err: any) {
             toast.error(err.message);
+            setLoading(false);
         }
     };
 
@@ -68,8 +73,10 @@ const LoginForm: React.FC = () => {
                 type="password"
                 inputDesign={InputDesign.LOGIN}
             />
-            <Button>LOGIN</Button>
-            <Link href={"/auth/signup"} className="text-center text-primary hover:scale-105 transition-all">Criar conta</Link>
+            {loading ? <Spinner /> : <Button>LOGIN</Button>}
+            <Link href={"/auth/signup"} className="text-center text-primary hover:scale-105 transition-all">
+                Criar conta
+            </Link>
         </form>
     );
 };

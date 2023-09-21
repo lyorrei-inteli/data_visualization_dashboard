@@ -7,9 +7,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { AtSign, Lock, User } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+import { Spinner } from "../Spinner";
 
 const schema = yup.object({
     name: yup.string().required("Esse campo é obrigatório."),
@@ -25,10 +27,12 @@ const SignupForm: React.FC = () => {
     } = useForm<any>({
         resolver: yupResolver(schema),
     });
+    const [loading, setLoading] = useState(false);
 
     const router = useRouter();
 
     const onSubmit = async (data: any) => {
+        setLoading(true);
         try {
             await fetchInstance(apiRoutes.auth.signup, {
                 method: "POST",
@@ -37,12 +41,12 @@ const SignupForm: React.FC = () => {
                     "Content-Type": "application/json",
                 },
             });
-            console.log("passou");
             toast.success("Signup realizado com sucesso.");
             router.replace(routes.auth.login);
         } catch (err: any) {
             console.log("err:", err);
             toast.error(err.message);
+            setLoading(false);
         }
     };
 
@@ -76,7 +80,7 @@ const SignupForm: React.FC = () => {
                 type="password"
                 inputDesign={InputDesign.LOGIN}
             />
-            <Button>CRIAR CONTA</Button>
+            {loading ? <Spinner /> : <Button>CRIAR CONTA</Button>}
             <Link href={"/auth/login"} className="text-center text-primary hover:scale-105 transition-all">
                 Login
             </Link>

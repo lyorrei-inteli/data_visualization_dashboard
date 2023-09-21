@@ -1,17 +1,21 @@
+import io
 import logging
 from uuid import uuid4
 
-from models.user import TokenSchema, UserAuth, UserOut, SystemUser
-from utils.auth import create_access_token, get_hashed_password, verify_password
-from models.prediction import InputData, OutputData
-from fastapi import Depends, FastAPI, HTTPException, status
+import pandas as pd
+from database.prisma import Prisma, db, get_db
+from dotenv import load_dotenv
+from fastapi import Depends, FastAPI, File, HTTPException, UploadFile, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 from fastapi.security import OAuth2PasswordRequestForm
+from middleware.auth import get_current_user
+from models.prediction import InputData, MultiOutputData, Prediction
+from models.user import SystemUser, TokenSchema, UserResponse, UserAuth, UserOut
 from pycaret.classification import load_model
 from services.prediction import make_prediction
-from middleware.auth import get_current_user
-from database.prisma import db, get_db, Prisma
-from dotenv import load_dotenv
+from utils.auth import (create_access_token, get_hashed_password,
+                        verify_password)
 
 load_dotenv()
 
@@ -26,6 +30,14 @@ app = FastAPI(
     version="1.0.0",
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can specify the domains you want to allow here
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 @app.post("/signup", summary="Create new user", response_model=UserOut)
 async def create_user(data: UserAuth, db: Prisma = Depends(get_db)):
@@ -38,6 +50,7 @@ async def create_user(data: UserAuth, db: Prisma = Depends(get_db)):
         )
     user = {
         "email": data.email,
+        "name": data.name,
         "password": get_hashed_password(data.password),
         "id": str(uuid4()),
     }
@@ -67,8 +80,11 @@ async def login(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Incorrect email or password",
         )
+    print(user)
+    user_response = UserResponse.from_orm(user)
 
     return {
+        "user": user_response,
         "access_token": create_access_token(user.email),
     }
 
@@ -82,19 +98,59 @@ async def get_me(
     return user
 
 
-@app.post("/predict/", response_model=OutputData)
+@app.get("/predictions", response_model=list[Prediction])
+async def get_predictions(
+    db: Prisma = Depends(get_db), user: SystemUser = Depends(get_current_user)
+):
+    predictions = await db.prediction.find_many(include={"PredictionInfo": True})
+    print(predictions)
+    return predictions
+
+
+@app.post("/predictions/create", response_model=MultiOutputData)
 async def predict(
-    data: InputData,
+    file: UploadFile = File(...),
     db: Prisma = Depends(get_db),
     user: SystemUser = Depends(get_current_user),
 ):
     try:
-        prediction_result = make_prediction(data.dict(), model)
-        result = prediction_result["prediction_label"].iloc[0]
-        return {
-            "prediction": result,
-            "result": "Acidente severo" if result == 1 else "Acidente não severo",
-        }
+        # Read the CSV content
+        contents = await file.read()
+        df = pd.read_csv(io.StringIO(contents.decode("utf-8")))
+
+        results = []
+
+        for _, row in df.iterrows():
+            data_dict = row.to_dict()
+            data = InputData(**data_dict)
+
+            prediction_result = make_prediction(data.dict(), model)
+            single_result = prediction_result["prediction_label"].iloc[0]
+
+            async with db.tx() as transaction:
+                new_prediction = await transaction.prediction.create(
+                    data={
+                        "result": int(single_result),
+                        "authorId": str(user.id),
+                        "name": data.name,
+                    }
+                )
+                del data.name
+                await transaction.predictioninfo.create(
+                    data={**data.dict(), "predictionId": new_prediction.id}
+                )
+
+            results.append(
+                {
+                    "prediction": single_result,
+                    "result": "Acidente severo"
+                    if single_result == 1
+                    else "Acidente não severo",
+                }
+            )
+
+        return {"predictions": results}
+
     except Exception as e:
         logging.error(f"An error occurred: {str(e)}")
         raise HTTPException(status_code=400, detail=str(e))
@@ -103,4 +159,4 @@ async def predict(
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, port=8000)
+    uvicorn.run(app, port=3001)

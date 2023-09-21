@@ -14,14 +14,18 @@ export const authOptions: AuthOptions = {
             },
             async authorize(credentials, req) {
                 try {
+                    const formBody = new URLSearchParams();
+                    formBody.append("username", credentials?.email as string);
+                    formBody.append("password", credentials?.password as string);
                     const res = await fetchInstance(apiRoutes.auth.login, {
                         headers: {
-                            "Content-Type": "application/json",
+                            "Content-Type": "application/x-www-form-urlencoded",
                         },
                         method: "POST",
-                        body: JSON.stringify({ email: credentials?.email, password: credentials?.password }),
+                        body: formBody
                     });
-                    return { ...res.user, apiToken: res.token };
+                    
+                    return { ...res.user, apiToken: res.access_token };
                 } catch (error: any) {
                     console.log("error:", error);
                     throw new Error(error.message || error);

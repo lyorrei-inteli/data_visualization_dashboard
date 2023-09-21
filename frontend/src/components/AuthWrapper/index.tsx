@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Background from '@/assets/auth_background.jpg'
 
 interface AuthWrapperProps {
     children: React.ReactNode;
@@ -20,13 +21,13 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
                     <div className="w-[90%] h-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-3xl">
                         <div className="absolute top-36 left-[50%] w-[60%] translate-x-[-50%] z-10 rounded-tl-4xl">
                             <h1 className="text-white font-bold text-4xl">
-                                Previsão de Problemas no Sistema de Bleed da Azul
+                                Previsão de gravidade de acidente
                             </h1>
                             <h5 className="text-white mt-4 text-xl">
                                 Faça login com suas credenciais para acessar os relatórios e diagnósticos.
                             </h5>
                         </div>
-                        <img src={"https://d1gyjlvk5cyqi7.cloudfront.net/login.jpg"}  alt="Home" className="object-fill w-full h-full" />
+                        <Image src={Background}  alt="Home" fill={true} objectFit="cover" />
                     </div>
                 </div>
             </div>

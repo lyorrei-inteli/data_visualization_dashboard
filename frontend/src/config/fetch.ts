@@ -32,7 +32,8 @@ export const fetchInstance = async (endpoint: string, options?: RequestInit) => 
 
     if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || "Fetch request failed");
+        console.log("errorData:", errorData)
+        throw new Error(errorData.message || errorData.detail || "Fetch request failed");
     }
 
     return response.json();

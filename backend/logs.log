@@ -532,3 +532,1275 @@
 2023-09-19 13:37:29,463:INFO:Preloading libraries
 2023-09-19 13:37:29,464:INFO:Set up data.
 2023-09-19 13:37:29,482:INFO:Set up index.
+2023-09-19 14:34:59,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:34:59,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:34:59,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:34:59,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:34:59,757:INFO:Initializing load_model()
+2023-09-19 14:34:59,758:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 14:36:51,401:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:36:51,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:36:51,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:36:51,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 14:36:52,139:INFO:Initializing load_model()
+2023-09-19 14:36:52,139:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:24:31,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:24:31,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:24:31,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:24:31,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:24:32,184:INFO:Initializing load_model()
+2023-09-19 15:24:32,184:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:25:06,900:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:25:06,926:INFO:Initializing predict_model()
+2023-09-19 15:25:06,926:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17aad6980>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16be04430>)
+2023-09-19 15:25:06,926:INFO:Checking exceptions
+2023-09-19 15:25:06,926:INFO:Preloading libraries
+2023-09-19 15:25:06,927:INFO:Set up data.
+2023-09-19 15:25:06,940:INFO:Set up index.
+2023-09-19 15:25:26,031:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:25:26,031:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:25:26,031:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:25:26,031:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:25:26,597:INFO:Initializing load_model()
+2023-09-19 15:25:26,597:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:25:30,585:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:25:30,613:INFO:Initializing predict_model()
+2023-09-19 15:25:30,613:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x144dcd1b0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x145639f30>)
+2023-09-19 15:25:30,613:INFO:Checking exceptions
+2023-09-19 15:25:30,613:INFO:Preloading libraries
+2023-09-19 15:25:30,613:INFO:Set up data.
+2023-09-19 15:25:30,623:INFO:Set up index.
+2023-09-19 15:25:35,595:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:25:35,616:INFO:Initializing predict_model()
+2023-09-19 15:25:35,616:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x145636680>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x143cebf40>)
+2023-09-19 15:25:35,616:INFO:Checking exceptions
+2023-09-19 15:25:35,616:INFO:Preloading libraries
+2023-09-19 15:25:35,617:INFO:Set up data.
+2023-09-19 15:25:35,626:INFO:Set up index.
+2023-09-19 15:27:43,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:27:43,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:27:43,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:27:43,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:27:44,027:INFO:Initializing load_model()
+2023-09-19 15:27:44,027:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:27:48,093:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:27:48,104:INFO:Initializing predict_model()
+2023-09-19 15:27:48,104:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x177147b80>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x177165630>)
+2023-09-19 15:27:48,104:INFO:Checking exceptions
+2023-09-19 15:27:48,104:INFO:Preloading libraries
+2023-09-19 15:27:48,104:INFO:Set up data.
+2023-09-19 15:27:48,111:INFO:Set up index.
+2023-09-19 15:29:25,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:29:25,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:29:25,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:29:25,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:29:26,003:INFO:Initializing load_model()
+2023-09-19 15:29:26,003:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:29:35,108:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:29:35,133:INFO:Initializing predict_model()
+2023-09-19 15:29:35,133:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x1700470a0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x170065510>)
+2023-09-19 15:29:35,133:INFO:Checking exceptions
+2023-09-19 15:29:35,133:INFO:Preloading libraries
+2023-09-19 15:29:35,134:INFO:Set up data.
+2023-09-19 15:29:35,144:INFO:Set up index.
+2023-09-19 15:31:19,230:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:19,231:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:19,231:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:19,231:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:19,882:INFO:Initializing load_model()
+2023-09-19 15:31:19,882:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:31:32,313:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:31:32,341:INFO:Initializing predict_model()
+2023-09-19 15:31:32,342:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x179bcd870>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d33a680>)
+2023-09-19 15:31:32,342:INFO:Checking exceptions
+2023-09-19 15:31:32,342:INFO:Preloading libraries
+2023-09-19 15:31:32,342:INFO:Set up data.
+2023-09-19 15:31:32,353:INFO:Set up index.
+2023-09-19 15:31:58,316:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:58,316:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:58,316:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:58,316:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:31:58,908:INFO:Initializing load_model()
+2023-09-19 15:31:58,909:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:32:01,741:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:32:01,763:INFO:Initializing predict_model()
+2023-09-19 15:32:01,763:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x161d77b80>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x161d95510>)
+2023-09-19 15:32:01,763:INFO:Checking exceptions
+2023-09-19 15:32:01,763:INFO:Preloading libraries
+2023-09-19 15:32:01,763:INFO:Set up data.
+2023-09-19 15:32:01,769:INFO:Set up index.
+2023-09-19 15:32:37,453:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:32:37,453:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:32:37,453:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:32:37,453:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:32:38,081:INFO:Initializing load_model()
+2023-09-19 15:32:38,081:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:32:42,758:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:32:42,786:INFO:Initializing predict_model()
+2023-09-19 15:32:42,786:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15d1b2a40>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x15d1d1510>)
+2023-09-19 15:32:42,786:INFO:Checking exceptions
+2023-09-19 15:32:42,786:INFO:Preloading libraries
+2023-09-19 15:32:42,787:INFO:Set up data.
+2023-09-19 15:32:42,797:INFO:Set up index.
+2023-09-19 15:32:47,364:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:100: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:32:47,389:INFO:Initializing predict_model()
+2023-09-19 15:32:47,389:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x15caae7a0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x15ca8acb0>)
+2023-09-19 15:32:47,389:INFO:Checking exceptions
+2023-09-19 15:32:47,389:INFO:Preloading libraries
+2023-09-19 15:32:47,390:INFO:Set up data.
+2023-09-19 15:32:47,401:INFO:Set up index.
+2023-09-19 15:34:14,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:34:14,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:34:14,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:34:14,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:34:15,579:INFO:Initializing load_model()
+2023-09-19 15:34:15,579:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:34:19,136:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:101: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:34:19,159:INFO:Initializing predict_model()
+2023-09-19 15:34:19,159:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x164fdf5e0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x165595510>)
+2023-09-19 15:34:19,159:INFO:Checking exceptions
+2023-09-19 15:34:19,159:INFO:Preloading libraries
+2023-09-19 15:34:19,160:INFO:Set up data.
+2023-09-19 15:34:19,172:INFO:Set up index.
+2023-09-19 15:35:03,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:35:03,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:35:03,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:35:03,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:35:04,328:INFO:Initializing load_model()
+2023-09-19 15:35:04,328:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:35:11,812:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:101: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:35:11,834:INFO:Initializing predict_model()
+2023-09-19 15:35:11,834:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x1547df640>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x15591d510>)
+2023-09-19 15:35:11,834:INFO:Checking exceptions
+2023-09-19 15:35:11,834:INFO:Preloading libraries
+2023-09-19 15:35:11,835:INFO:Set up data.
+2023-09-19 15:35:11,845:INFO:Set up index.
+2023-09-19 15:39:11,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:11,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:11,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:11,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:12,571:INFO:Initializing load_model()
+2023-09-19 15:39:12,571:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:39:17,981:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:101: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:39:18,005:INFO:Initializing predict_model()
+2023-09-19 15:39:18,005:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x161e77070>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x161e95510>)
+2023-09-19 15:39:18,005:INFO:Checking exceptions
+2023-09-19 15:39:18,005:INFO:Preloading libraries
+2023-09-19 15:39:18,006:INFO:Set up data.
+2023-09-19 15:39:18,017:INFO:Set up index.
+2023-09-19 15:39:29,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:29,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:29,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:29,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:39:29,664:INFO:Initializing load_model()
+2023-09-19 15:39:29,664:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 15:39:32,647:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:101: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:39:32,673:INFO:Initializing predict_model()
+2023-09-19 15:39:32,673:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x167847760>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x1678d1510>)
+2023-09-19 15:39:32,673:INFO:Checking exceptions
+2023-09-19 15:39:32,673:INFO:Preloading libraries
+2023-09-19 15:39:32,673:INFO:Set up data.
+2023-09-19 15:39:32,684:INFO:Set up index.
+2023-09-19 15:39:33,492:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:106: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  await transaction.predictioninfo.create(data={**data.dict(), "predictionId": new_prediction.id})
+
+2023-09-19 15:39:38,823:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:101: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 15:39:38,853:INFO:Initializing predict_model()
+2023-09-19 15:39:38,853:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x1678e1ae0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16759ea70>)
+2023-09-19 15:39:38,853:INFO:Checking exceptions
+2023-09-19 15:39:38,853:INFO:Preloading libraries
+2023-09-19 15:39:38,854:INFO:Set up data.
+2023-09-19 15:39:38,866:INFO:Set up index.
+2023-09-19 15:39:39,676:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:106: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  await transaction.predictioninfo.create(data={**data.dict(), "predictionId": new_prediction.id})
+
+2023-09-19 15:49:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:49:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:49:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:49:17,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 15:49:18,296:INFO:Initializing load_model()
+2023-09-19 15:49:18,296:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:03:30,709:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:03:30,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:03:30,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:03:30,710:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:03:31,360:INFO:Initializing load_model()
+2023-09-19 16:03:31,360:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:05:48,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:05:48,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:05:48,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:05:48,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:05:48,864:INFO:Initializing load_model()
+2023-09-19 16:05:48,865:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:40:01,551:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:113: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 16:40:01,587:INFO:Initializing predict_model()
+2023-09-19 16:40:01,587:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x16fb80e20>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16f320ca0>)
+2023-09-19 16:40:01,587:INFO:Checking exceptions
+2023-09-19 16:40:01,587:INFO:Preloading libraries
+2023-09-19 16:40:01,593:INFO:Set up data.
+2023-09-19 16:40:01,608:INFO:Set up index.
+2023-09-19 16:40:02,530:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:126: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  data={**data.dict(), "predictionId": new_prediction.id}
+
+2023-09-19 16:40:03,210:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:113: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 16:40:03,234:INFO:Initializing predict_model()
+2023-09-19 16:40:03,234:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x16fba2e90>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x102a60700>)
+2023-09-19 16:40:03,234:INFO:Checking exceptions
+2023-09-19 16:40:03,234:INFO:Preloading libraries
+2023-09-19 16:40:03,234:INFO:Set up data.
+2023-09-19 16:40:03,248:INFO:Set up index.
+2023-09-19 16:40:03,725:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:126: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  data={**data.dict(), "predictionId": new_prediction.id}
+
+2023-09-19 16:40:04,140:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:113: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  prediction_result = make_prediction(data.dict(), model)
+
+2023-09-19 16:40:04,162:INFO:Initializing predict_model()
+2023-09-19 16:40:04,162:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x16fb6c8b0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x102a60700>)
+2023-09-19 16:40:04,162:INFO:Checking exceptions
+2023-09-19 16:40:04,162:INFO:Preloading libraries
+2023-09-19 16:40:04,162:INFO:Set up data.
+2023-09-19 16:40:04,175:INFO:Set up index.
+2023-09-19 16:40:04,637:WARNING:/Users/lyo.quintao/Documents/development/Projects/data_visualization_dashboard/backend/app.py:126: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.3/migration/
+  data={**data.dict(), "predictionId": new_prediction.id}
+
+2023-09-19 16:47:46,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:47:46,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:47:46,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:47:46,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:47:47,091:INFO:Initializing load_model()
+2023-09-19 16:47:47,091:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:49:17,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:49:17,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:49:17,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:49:17,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:49:18,509:INFO:Initializing load_model()
+2023-09-19 16:49:18,509:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:50:16,397:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:16,397:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:16,397:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:16,397:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:17,036:INFO:Initializing load_model()
+2023-09-19 16:50:17,036:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:50:21,798:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:21,798:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:21,798:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:21,798:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:50:22,313:INFO:Initializing load_model()
+2023-09-19 16:50:22,313:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:51:39,457:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:39,457:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:39,457:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:39,457:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:40,089:INFO:Initializing load_model()
+2023-09-19 16:51:40,089:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:51:44,387:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:44,387:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:44,387:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:44,387:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:44,963:INFO:Initializing load_model()
+2023-09-19 16:51:44,963:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:51:51,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:51,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:51,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:51,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:53,152:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:53,152:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:53,152:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:53,152:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:53,701:INFO:Initializing load_model()
+2023-09-19 16:51:53,701:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:51:59,582:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:59,582:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:59,582:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:51:59,582:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:52:00,108:INFO:Initializing load_model()
+2023-09-19 16:52:00,108:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:53:07,367:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:07,367:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:07,367:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:07,367:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:08,030:INFO:Initializing load_model()
+2023-09-19 16:53:08,030:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:53:47,039:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:47,039:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:47,039:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:47,039:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:47,661:INFO:Initializing load_model()
+2023-09-19 16:53:47,661:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:53:51,179:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:51,179:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:51,179:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:51,179:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:53:51,662:INFO:Initializing load_model()
+2023-09-19 16:53:51,662:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:54:13,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:54:13,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:54:13,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:54:13,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:54:14,197:INFO:Initializing load_model()
+2023-09-19 16:54:14,197:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 16:58:39,189:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:58:39,189:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:58:39,189:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:58:39,189:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 16:58:39,798:INFO:Initializing load_model()
+2023-09-19 16:58:39,798:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:01:22,079:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:01:22,079:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:01:22,079:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:01:22,079:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:01:22,714:INFO:Initializing load_model()
+2023-09-19 17:01:22,714:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:02:49,122:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:02:49,122:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:02:49,122:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:02:49,122:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:02:49,740:INFO:Initializing load_model()
+2023-09-19 17:02:49,740:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:04:38,001:INFO:Initializing predict_model()
+2023-09-19 17:04:38,002:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17b053eb0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16b8c64d0>)
+2023-09-19 17:04:38,002:INFO:Checking exceptions
+2023-09-19 17:04:38,002:INFO:Preloading libraries
+2023-09-19 17:04:38,003:INFO:Set up data.
+2023-09-19 17:04:38,022:INFO:Set up index.
+2023-09-19 17:04:39,541:INFO:Initializing predict_model()
+2023-09-19 17:04:39,541:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17b0127a0>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x10648ef80>)
+2023-09-19 17:04:39,541:INFO:Checking exceptions
+2023-09-19 17:04:39,541:INFO:Preloading libraries
+2023-09-19 17:04:39,542:INFO:Set up data.
+2023-09-19 17:04:39,554:INFO:Set up index.
+2023-09-19 17:04:40,486:INFO:Initializing predict_model()
+2023-09-19 17:04:40,486:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x105b4d450>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x10648ef80>)
+2023-09-19 17:04:40,486:INFO:Checking exceptions
+2023-09-19 17:04:40,486:INFO:Preloading libraries
+2023-09-19 17:04:40,486:INFO:Set up data.
+2023-09-19 17:04:40,499:INFO:Set up index.
+2023-09-19 17:08:05,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:08:05,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:08:05,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:08:05,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:08:05,797:INFO:Initializing load_model()
+2023-09-19 17:08:05,797:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:09:20,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:09:20,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:09:20,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:09:20,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:09:20,584:INFO:Initializing load_model()
+2023-09-19 17:09:20,585:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:10:28,068:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:28,068:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:28,068:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:28,068:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:28,695:INFO:Initializing load_model()
+2023-09-19 17:10:28,695:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:10:44,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:44,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:44,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:44,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:10:45,129:INFO:Initializing load_model()
+2023-09-19 17:10:45,129:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-19 17:11:17,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:11:17,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:11:17,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:11:17,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-19 17:11:18,376:INFO:Initializing load_model()
+2023-09-19 17:11:18,376:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:08:23,607:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:08:23,607:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:08:23,607:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:08:23,607:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:08:24,893:INFO:Initializing load_model()
+2023-09-21 11:08:24,893:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:29:32,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:29:32,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:29:32,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:29:32,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:29:33,612:INFO:Initializing load_model()
+2023-09-21 11:29:33,612:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:31:12,989:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:31:12,989:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:31:12,989:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:31:12,989:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:31:13,572:INFO:Initializing load_model()
+2023-09-21 11:31:13,572:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:37:04,385:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:37:04,385:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:37:04,385:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:37:04,385:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:37:05,029:INFO:Initializing load_model()
+2023-09-21 11:37:05,029:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:45:27,255:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:45:27,256:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:45:27,256:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:45:27,256:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:45:28,519:INFO:Initializing load_model()
+2023-09-21 11:45:28,519:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 11:49:05,376:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:49:05,377:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:49:05,377:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:49:05,377:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 11:49:05,956:INFO:Initializing load_model()
+2023-09-21 11:49:05,956:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:17:22,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:17:22,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:17:22,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:17:22,313:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:17:22,945:INFO:Initializing load_model()
+2023-09-21 13:17:22,945:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:19:28,772:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:19:28,773:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:19:28,773:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:19:28,773:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:19:29,349:INFO:Initializing load_model()
+2023-09-21 13:19:29,349:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:23:59,849:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:23:59,850:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:23:59,850:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:23:59,850:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:24:00,527:INFO:Initializing load_model()
+2023-09-21 13:24:00,527:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:24:08,070:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:24:08,070:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:24:08,070:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:24:08,070:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:24:08,631:INFO:Initializing load_model()
+2023-09-21 13:24:08,631:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:25:00,226:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:00,226:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:00,226:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:00,226:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:00,781:INFO:Initializing load_model()
+2023-09-21 13:25:00,781:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:25:30,315:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:30,315:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:30,315:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:30,315:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:30,731:INFO:Initializing load_model()
+2023-09-21 13:25:30,731:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:25:45,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:45,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:45,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:45,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:25:46,033:INFO:Initializing load_model()
+2023-09-21 13:25:46,033:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:26:31,245:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:31,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:31,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:31,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:31,655:INFO:Initializing load_model()
+2023-09-21 13:26:31,655:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:26:46,609:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:46,609:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:46,609:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:46,609:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:26:46,970:INFO:Initializing load_model()
+2023-09-21 13:26:46,970:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:27:48,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:27:48,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:27:48,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:27:48,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:27:48,928:INFO:Initializing load_model()
+2023-09-21 13:27:48,929:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:28:54,052:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:28:54,052:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:28:54,052:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:28:54,052:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:28:54,488:INFO:Initializing load_model()
+2023-09-21 13:28:54,488:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:29:07,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:07,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:07,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:07,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:08,247:INFO:Initializing load_model()
+2023-09-21 13:29:08,247:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:29:40,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:40,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:40,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:40,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:29:41,055:INFO:Initializing load_model()
+2023-09-21 13:29:41,055:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:30:32,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:32,459:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:32,460:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:32,460:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:32,866:INFO:Initializing load_model()
+2023-09-21 13:30:32,866:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:30:41,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:41,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:41,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:41,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:42,225:INFO:Initializing load_model()
+2023-09-21 13:30:42,225:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:30:45,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:45,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:45,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:45,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:30:46,055:INFO:Initializing load_model()
+2023-09-21 13:30:46,055:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:31:55,878:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:31:55,878:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:31:55,878:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:31:55,878:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:31:56,333:INFO:Initializing load_model()
+2023-09-21 13:31:56,333:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:33:41,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:33:41,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:33:41,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:33:41,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-21 13:33:41,897:INFO:Initializing load_model()
+2023-09-21 13:33:41,897:INFO:load_model(model_name=./ai/final_model, platform=None, authentication=None, verbose=True)
+2023-09-21 13:34:15,083:INFO:Initializing predict_model()
+2023-09-21 13:34:15,084:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17b489420>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x17b452830>)
+2023-09-21 13:34:15,084:INFO:Checking exceptions
+2023-09-21 13:34:15,084:INFO:Preloading libraries
+2023-09-21 13:34:15,084:INFO:Set up data.
+2023-09-21 13:34:15,097:INFO:Set up index.
+2023-09-21 13:34:16,786:INFO:Initializing predict_model()
+2023-09-21 13:34:16,787:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17b48a260>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x15939c700>)
+2023-09-21 13:34:16,787:INFO:Checking exceptions
+2023-09-21 13:34:16,787:INFO:Preloading libraries
+2023-09-21 13:34:16,787:INFO:Set up data.
+2023-09-21 13:34:16,800:INFO:Set up index.
+2023-09-21 13:34:17,860:INFO:Initializing predict_model()
+2023-09-21 13:34:17,860:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x17b43d390>, estimator=Pipeline(memory=FastMemory(location=/var/folders/l0/86s5dr1j4pd6kh_8_w9c68380000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['car', 'bicycle', 'trucks',
+                                             'motorbike', 'bus', 'others',
+                                             'animals', 'special_cargos',
+                                             'tractors', 'utilities',
+                                             'unharmed', 'slight_injury',
+                                             'moderate_injury',
+                                             'serious_injury', 'month', 'year',
+                                             'dayofweek',
+                                             'road_info...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=6,
+                                feature_fraction=1.0, learning_rate=0.2,
+                                min_child_samples=26, min_split_gain=0,
+                                n_estimators=180, n_jobs=-1, num_leaves=70,
+                                random_state=5704, reg_alpha=4,
+                                reg_lambda=4))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x15939c700>)
+2023-09-21 13:34:17,860:INFO:Checking exceptions
+2023-09-21 13:34:17,860:INFO:Preloading libraries
+2023-09-21 13:34:17,860:INFO:Set up data.
+2023-09-21 13:34:17,873:INFO:Set up index.

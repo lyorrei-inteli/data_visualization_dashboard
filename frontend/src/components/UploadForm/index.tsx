@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 import { apiRoutes, routes } from "@/config/routes";
 import { useRouter } from "next/navigation";
 import { ClockLoader } from "react-spinners";
+import Link from "next/link";
 
 const schema = yup.object({
     name: yup.string().required("Esse campo é obrigatório."),
@@ -41,26 +42,26 @@ export const UploadForm = () => {
     const { getRootProps, getInputProps } = useDropzone({
         onDrop,
         accept: {
-            "application/octet-stream": [".parquet"],
+            "application/octet-stream": [".csv"],
         },
         multiple: false,
     });
 
     const onSubmit = async (data) => {
-        if (!uploadedFile) return toast.error("Por favor, faça upload de um arquivo .parquet antes de enviar.");
+        if (!uploadedFile) return toast.error("Por favor, faça upload de um arquivo .csv antes de enviar.");
         setLoading(true);
         const formData = new FormData();
         formData.append("name", data.name);
         formData.append("file", uploadedFile);
 
         try {
-            await fetchInstance(apiRoutes.flight.create, {
+            await fetchInstance(apiRoutes.predictions.create, {
                 method: "POST",
                 body: formData,
             });
 
             toast.success("Arquivo enviado com sucesso!");
-            router.push(routes.flight.base);
+            router.push(routes.predictions.base);
         } catch (error) {
             console.error("Erro ao enviar o arquivo:", error);
             setLoading(false);
@@ -82,11 +83,15 @@ export const UploadForm = () => {
                 name="name"
                 register={register}
             />
+
+            <Link className="text-primary text-lg font-medium mt-4 block" href={"/prediction.csv"}>
+                Clique aqui para baixar um exemplo de arquivo csv.
+            </Link>
             <div {...getRootProps()} className="min-x-[80%] p-20 border-dashed border-2 border-gray-400 cursor-pointer">
                 <input {...getInputProps()} {...register("file")} />
                 {uploadedFile
                     ? uploadedFile.name
-                    : "Arraste e solte um arquivo .parquet aqui, ou clique para selecionar um."}
+                    : "Arraste e solte um arquivo .csv aqui, ou clique para selecionar um do seu computador."}
             </div>
             <Button type="submit">Submit</Button>
         </form>

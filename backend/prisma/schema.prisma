@@ -10,17 +10,77 @@ generator py {
 
 model User {
   id         String       @id @default(uuid())
+  name       String
   email      String       @unique
   password   String
   Prediction Prediction[]
 }
 
 model Prediction {
-  id        String   @id @default(uuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  result    String
-  content   String
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  String
+  id             String          @id @default(uuid())
+  name           String
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  result         Int
+  author         User            @relation(fields: [authorId], references: [id])
+  authorId       String
+  PredictionInfo PredictionInfo?
+}
+
+model PredictionInfo {
+  id                                         String @id @default(uuid())
+  car                                        Float
+  bicycle                                    Float
+  trucks                                     Float
+  motorbike                                  Float
+  bus                                        Float
+  others                                     Float
+  animals                                    Float
+  special_cargos                             Float
+  tractors                                   Float
+  utilities                                  Float
+  unharmed                                   Float
+  slight_injury                              Float
+  moderate_injury                            Float
+  serious_injury                             Float
+  month                                      Int
+  year                                       Int
+  dayofweek                                  Int
+  road_info_Descending_Curve                 Int
+  road_info_East_Going                       Int
+  road_info_North_Going                      Int
+  road_info_Other                            Int
+  road_info_South_Going                      Int
+  road_info_Top_Curve                        Int
+  road_info_West_Going                       Int
+  accident_place_Autopista_Fernao_Dias       Int
+  accident_place_Autopista_Fluminense        Int
+  accident_place_Autopista_Litoral_Sul       Int
+  accident_place_Autopista_Planalto_Sul      Int
+  accident_place_Autopista_Regis_Bittencourt Int
+  accident_place_Concebra                    Int
+  accident_place_Concepa                     Int
+  accident_place_Concer                      Int
+  accident_place_Cro                         Int
+  accident_place_Crt                         Int
+  accident_place_ECO050                      Int
+  accident_place_ECO101                      Int
+  accident_place_Ecoponte                    Int
+  accident_place_Ecoriominas                 Int
+  accident_place_Ecosul                      Int
+  accident_place_Ecovias_do_Araguaia         Int
+  accident_place_Ecovias_do_Cerrado          Int
+  accident_place_MSVIA                       Int
+  accident_place_Novadutra                   Int
+  accident_place_RIOSP                       Int
+  accident_place_Rodovia_do_Aco              Int
+  accident_place_Transbrasiliana             Int
+  accident_place_VIA040                      Int
+  accident_place_Via_Bahia                   Int
+  accident_place_Via_Brasil                  Int
+  accident_place_Via_Costeira                Int
+  accident_place_Via_Sul                     Int
+
+  prediction   Prediction? @relation(fields: [predictionId], references: [id])
+  predictionId String?     @unique
 }

@@ -1,14 +1,17 @@
-# Usando uma imagem base oficial de Python
+# Using the official Python base image
 FROM python:3.10.13
 
-# Definindo a pasta de trabalho no container
+# Set the working directory in the container
 WORKDIR /app
 
-# Copiando os arquivos necessários para a pasta de trabalho
+# Copy the necessary files into the working directory
 COPY . .
 
-# Instalando as bibliotecas necessárias
-RUN pip install fastapi pandas pycaret uvicorn
+# Install Python libraries
+RUN pip install -r requirements.txt
 
-# Comando para executar a aplicação
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Generate the database dependency
+RUN prisma generate
+
+# Command to run the application
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3001"]

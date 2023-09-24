@@ -1,12 +1,10 @@
 "use client";
-import { BarChart, LogOut, PersonStandingIcon, Upload, UserIcon } from "lucide-react";
+import { routes } from "@/config/routes";
+import { BarChart, LogOut, Upload, UserIcon } from "lucide-react";
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
-import Logo from "@/assets/logo.svg";
-import Image from "next/image";
-import { routes } from "@/config/routes";
 
 interface Props {}
 
@@ -28,9 +26,7 @@ const Sidebar: React.FC<Props> = (props) => {
 
     return (
         <div className="w-[20vw] min-h-[100vh] flex flex-col py-8 border-r-2 border-[#E4E4E4] fixed">
-            <Image alt="Logo" src={Logo} className="mx-auto mb-8" width={200} />
-
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mt-40">
                 {items.map((item, index) => (
                     <Link
                         className={`flex pl-6 py-5 mr-10 rounded-r-xl gap-4 text-xl items-center text-[#A3A3A5] ${

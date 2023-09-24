@@ -34,7 +34,7 @@ As seguintes ferramentas foram utilizadas:
       python3 app.py
     ``
 
-Caso queira realizar a etapa de ETL novamente, execute o arquivo `/model/etl.ipynb`. Para realizar o treinamento do modelo novamente, execute o arquivo `/model/training.ipynb`.
+Caso queira realizar a etapa de ETL novamente, execute o arquivo `/ai/etl.ipynb`. Para realizar o treinamento do modelo novamente, execute o arquivo `/ai/training.ipynb`.
 
 #### Via Docker
 1. Acesse o diretório do projeto.
@@ -52,9 +52,9 @@ Caso queira realizar a etapa de ETL novamente, execute o arquivo `/model/etl.ipy
 ## Estrutura dos Arquivos
 
 - `app.py`: Contém o código da API FastAPI para realizar predições usando o modelo treinado.
-- `/model/etl.ipynb`: Jupyter Notebook com o script ETL para extração, transformação e carga dos dados.
-- `/model/training.ipynb`: Jupyter Notebook onde ocorre o treinamento do modelo utilizando o PyCaret.
-- `/model/final_model.pkl`: Modelo final salvo em disco após o treinamento.
+- `/ai/etl.ipynb`: Jupyter Notebook com o script ETL para extração, transformação e carga dos dados.
+- `/ai/training.ipynb`: Jupyter Notebook onde ocorre o treinamento do modelo utilizando o PyCaret.
+- `/ai/final_model.pkl`: Modelo final salvo em disco após o treinamento.
 - `/data/highway_crashes.csv`: Arquivo CSV contendo dados brutos de acidentes nas rodovias.
 - `/data/highway_crashes_processed.csv`: Arquivo CSV contendo dados de acidentes processados e prontos para treinamento e predição.
 

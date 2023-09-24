@@ -1,36 +1,23 @@
-FROM node:18-alpine AS deps
-RUN apk add --no-cache libc6-compat
-WORKDIR /app
+# Utiliza a imagem oficial do Node.js como base
+FROM node:lts
 
-COPY package.json package-lock.json ./
-RUN  npm install --production
+# Diretório de trabalho
+WORKDIR /usr/src/app
 
-FROM node:18-alpine AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+# Copie os arquivos de pacote
+COPY package*.json ./
+
+# Instale as dependências
+RUN npm install
+
+# Copie o restante dos arquivos do projeto
 COPY . .
 
-ENV NEXT_TELEMETRY_DISABLED 1
-
+# Construa o projeto
 RUN npm run build
 
-FROM node:18-alpine AS runner
-WORKDIR /app
-
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-USER nextjs
-
+# Exponha a porta padrão do Next.js
 EXPOSE 3000
 
-ENV PORT 3000
-
+# Comando para iniciar o servidor
 CMD ["npm", "run", "start"]

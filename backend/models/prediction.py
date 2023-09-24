@@ -126,6 +126,10 @@ class PrecisionInfo(BaseModel):
     accident_place_Via_Sul: int
     predictionId: str
 
+class User(BaseModel):
+    id: str
+    name: str
+    email: str
 
 class Prediction(BaseModel):
     id: str
@@ -135,3 +139,4 @@ class Prediction(BaseModel):
     result: int
     authorId: str
     PredictionInfo: PrecisionInfo
+    author: User

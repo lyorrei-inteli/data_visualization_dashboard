@@ -14,8 +14,7 @@ from models.prediction import InputData, MultiOutputData, Prediction
 from models.user import SystemUser, TokenSchema, UserResponse, UserAuth, UserOut
 from pycaret.classification import load_model
 from services.prediction import make_prediction
-from utils.auth import (create_access_token, get_hashed_password,
-                        verify_password)
+from utils.auth import create_access_token, get_hashed_password, verify_password
 
 load_dotenv()
 
@@ -102,7 +101,12 @@ async def get_me(
 async def get_predictions(
     db: Prisma = Depends(get_db), user: SystemUser = Depends(get_current_user)
 ):
-    predictions = await db.prediction.find_many(include={"PredictionInfo": True})
+    predictions = await db.prediction.find_many(
+        include={
+            "author": True,
+            "PredictionInfo": True,
+        }
+    )
     print(predictions)
     return predictions
 

@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: lyorrei/backend-data-visualization-dashboard
+    restart: always
+    env_file:
+      - ./backend/.env
+    ports:
+      - "3001:3001"
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: lyorrei/frontend-data-visualization-dashboard
+    restart: always
+    env_file:
+      - ./frontend/.env.local
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

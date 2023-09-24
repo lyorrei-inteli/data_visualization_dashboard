@@ -24,6 +24,7 @@ export const fetchInstance = async (endpoint: string, options?: RequestInit) => 
     };
 
     const response = await fetch(finalURL, mergedOptions);
+    console.log("response:", response)
 
     if (!response.ok) {
         const errorData = await response.json();

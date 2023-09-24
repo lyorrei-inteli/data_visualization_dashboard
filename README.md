@@ -20,7 +20,6 @@ Para garantir o acesso aos serviços, as regras de segurança foram configuradas
 ### Procedimento de Provisionamento
 No AWS Management Console, navegamos até o ECS e criamos um novo cluster.
 Dentro do cluster, definimos as especificações do serviço, apontando para as imagens Docker do frontend e do backend.
-Configuramos os serviços para se comunicar com o Elastic Load Balancing (ELB) para distribuir o tráfego.
 No RDS, criamos uma nova instância de banco de dados, escolhendo o tipo de banco que se encaixa com nosso projeto.
 Configuramos as regras de segurança para permitir tráfego do IP 0.0.0.0 nas portas específicas de cada serviço.
 
@@ -76,4 +75,4 @@ A imagem do frontend está disponível em: https://hub.docker.com/repository/doc
 
 ## Vídeo Demonstrativo
 
-[Link para o vídeo demonstrando o funcionamento do sistema deployado]
+Link para o vídeo demonstrando o funcionamento do sistema deployado: https://youtu.be/GiD132yTg0M

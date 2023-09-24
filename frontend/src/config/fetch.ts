@@ -12,7 +12,7 @@ export const fetchInstance = async (endpoint: string, options?: RequestInit) => 
         session = await getSession();
     }
 
-    const baseURL = process.env.NEXT_PUBLIC_API_URL as string;
+    const baseURL = process.env.NEXT_PUBLIC_API_URL as string || 'http://3.92.214.73:3001';
     const finalURL = `${baseURL}${endpoint}`;
 
     const mergedOptions: RequestInit = {
